@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    object-fit: fill;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 100vh;
+    width:100%;
+    background:url("../ProjectImages/login.jpg");
+    max-width:850;
+    z-index:12;
+}
+.outer{
+    padding:40px 30px;
+    background-color: #fff;
+    max-width: 730px;
+    width:100%;
+    /* border-radius: 4px; */
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow:0px 5px 15px ;
+    z-index:10;
+    perspective:2800px;
+}
+ .outer .cover{
+    position: absolute;
+    height: 100%;
+    width:50%;
+   
+    
+   z-index: 98;
+   top:0;
+   left:50%;
+   transform-style: preserve-3d;
+   transition: all 0.4s ease;
+   transform-origin: left;
+  }
+  .outer .cover img{
+      height: 100%;
+      width:100%;
+      position: absolute;
+      object-fit: cover;
+  }
+.logintitle{
+    margin-bottom:20px;
+    font-weight:500;
+    font-size: 24px;
+    position: relative;
+    padding-bottom: 4px;
+    transition: all 0.3s ease;
+}
+.logintitle:before{
+    content:'';
+    position:absolute;
+    height:3px;
+    width:32px;
+    background-color:#009B77;
+    z-index:100px;
+    bottom:0;
+    left:0;
+    transition: all 0.3s ease;
+}
+.inputboxes .inputbox i {
+    font-weight:500;
+    font-size:24px;
+    margin-right: 20px;
+    color: #009B77;
+    position: absolute;
+    z-index:20;
+    transition: all 0.3s ease;
+}
+.inputboxes .inputbox{
+    display: flex;
+    align-items: center;
+    height:50px;
+    width:100%;
+    margin-bottom: 10px;
+}
+.inputboxes .inputbox input:focus,
+.inputboxes .inputbox input{
+    height:100%;
+    
+    font-size: 15px;
+    font-weight:500;
+    outline:none;
+    border:none;
+    border-bottom: 2px solid rgba(0,0,0,0.4);
+    position:relative;
+    width:100%;
+    z-index:11;
+    transition: all 0.3s ease;
+    padding:5px 36px;
+    cursor: pointer;
+}
+
+.inputboxes a{
+    text-decoration: none;
+    color:black;
+   cursor: pointer;
+    font-size:14px;
+    font-weight:500;
+    transition: all 0.3s ease;
+}
+.inputboxes a:hover{
+    text-decoration: underline;
+    transition: all 0.2s ease;
+}
+
+.outer  #ashu{
+    position: absolute;
+    display: none;
+}
+.button input{
+    height:45px;
+    border-radius: 4px;
+    width:100%;
+    background-color:#009B77;
+    border:0px solid;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 550;
+    transition: all 0.2s ease;
+    
+}
+.button{
+    position: relative;
+    width:100%;
+    margin-top: 50px;
+    align-items: center;
+   
+}
+.outer form{
+    
+    width: 100%;
+    height: 100%;
+     
+}
+.outer #ashu:checked~ .cover{
+    transform: rotateY(-180deg);
+}
+.ashu1{
+    margin-top: 7px;
+}
+label:hover{
+    text-decoration: underline;
+}
+label{
+    color:#009B77;
+    cursor: pointer;
+}
+
+
+
+.Login{
+    position: relative;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Login{
+    width:calc(100%/2 - 25px)
+
+}
