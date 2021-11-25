@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding:0px;
+    margin:0px;
+    /* box-sizing: border-box; */
+    font-family: 'Orbitron',sans-serif;
+    transition: all 0.3s ease;
+}
+
+section{
+    margin: 0px;
+    padding: 0px;
+    
+    width:100vw;
+    height: 200vh;
+    /* display: flex; */
+    position: relative;
+    background: rgb(245,249,247);
+    background: linear-gradient(90deg, rgba(245,249,247,1) 0%, rgba(252,252,252,1) 93%, rgba(0,212,255,1) 100%);
+    padding:0px 20px;
+    /* z-index:10; */
+}
+section .container .time{
+    display: flex;
+    align-items: center;
+}
+section.dark{
+    background:#24282D;
+}
+section.dark .container{
+    background-color: #323840;
+}
+section .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100px;
+    max-width: 440px;
+    width:100%;
+    right:60px;
+    top:20px;
+    background-color: #FFF;
+    box-shadow: 5px 8px rgba(0,0,0,0.2);
+    border-radius:12px;
+    position: absolute;
+    
+}
+section .container .icons i{
+    position: absolute;
+    z-index: 10;
+    right:17px;
+    top: 17px;
+    height:30px;
+    width: 30px;
+    background-color: #24292D;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius:50%;
+    font-size: 14px;
+    cursor: pointer;
+}
+.container .icons i.fa-sun-o{
+    opacity: 0;
+    pointer-events: none;
+}
+section.dark .container .icons i{
+    color: #323840;
+    background-color: #fff;
+}
+section.dark .container .icons i.fa-sun-o{
+    opacity: 1;
+    pointer-events: auto;
+    font-size: 16px;
+}
+section.dark .time .time-colon .time-text{
+    background-color: #24292D;
+}
+section.dark .time .time-colon .time-text,
+section.dark .time .time-colon .colon{
+    color: #FFF;
+}
+.container .time .time-colon{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.time .time-colon .am_pm{
+    position: absolute;
+    top:0;
+    right:-50px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.time .time-colon .time-text{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    border-radius: 6px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F0F8FF;
+    box-shadow: 5px 10px rgba(0,0,0,0.2);
+}
+.time .time-colon .time-text,
+.time .time-colon .colon{
+    font-size:20px;
+    font-weight:600;
+}
+.time .time-colon .colon{
+    font-size: 40px;
+    margin:0px 10px;
+}
+.time .time-colon .time-text .text{
+    font-size: 12px;
+    font-weight: 700;
+}
+.hotel1{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width:800px;
+    height:250px;
+    left:350px;
+    top:180px;
+    border-radius: 15px;
+    box-shadow: 5px 8px rgba(0,0,0,0.2) ;
+    
+    background-color: #fff;
+    border:1px solid black;
+}
+.hotel2{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width:800px;
+    height:250px;
+    left:350px;
+    top:480px;
+    border-radius: 15px;
+    box-shadow: 5px 8px rgba(0,0,0,0.2) ;
+    background-color: #fff;
+    border:1px solid black;
+}
+.restaurant1{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width:800px;
+    height:250px;
+    left:350px;
+    top:790px;
+    border-radius: 15px;
+    box-shadow: 5px 8px rgba(0,0,0,0.2) ;
+    background-color: #fff;
+    border:1px solid black;
+}
+.restaurant2{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width:800px;
+    height:250px;
+    left:350px;
+    top:1100px;
+    border-radius: 15px;
+    box-shadow: 5px 8px rgba(0,0,0,0.2) ;
+    background-color: #fff;
+    border:1px solid black;
+}
+.text{
+    font-size: 30px;
+    font-weight:500;
+    color:#1d1b31;
+    margin:12px;
+    position:absolute;
+    height:60px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:480px;
+    left:250px;
+    
+}
+section.dark .text{
+    color:#fff;
+}
+section .hotel1 .hotel1_content{
+    position: relative;
+    min-width:60%;
+    height:230px;
+    
+}
+section .hotel1 img{
+    width:230px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+    border:2px solid black;
+}
+section .hotel2 .hotel2_content{
+    position: relative;
+    min-width:60%;
+    height:230px;
+}
+section .hotel2 img{
+    width:230px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+    border:2px solid black
+}
+section .restaurant1 .rest1_content{
+    position: relative;
+    min-width:60%;
+    height:230px;
+}
+section .restaurant1 img{
+    width:230px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+    border:2px solid black
+}
+section .restaurant2 .rest2_content{
+    position: relative;
+    min-width:60%;
+    height:230px;
+}
+section .restaurant2 img{
+    width:230px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+    border:2px solid black
+}
+.name{
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-family: Poppins,sans-serif;
+}
+.address{
+    margin-left:20px;
+    width:80%;
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 30px;
+    font-family: Poppins,sans-serif;
+}
+.price{
+    width:180px;
+    border-radius: 10px;
+    background-color: #24292D;
+    color: blanchedalmond;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins,sans-serif;
+    height: 40px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.price span{
+    margin-left: 5px;
+    font-family: Poppins,sans-serif;
+}
