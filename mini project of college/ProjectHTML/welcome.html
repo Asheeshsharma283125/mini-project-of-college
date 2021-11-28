@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>Hello, world!</title>
+  </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    body{
+      display: flex;
+      padding:0px;
+      margin: 0px;
+      font-family: Poppins,sans-serif;
+    }
+    img{
+      width: 100vw;
+      height:100vh;
+      object-fit: cover;
+     z-index: 10;
+    }
+    
+    
+   
+    
+    .temp1{
+      background-color: #1d1b31;
+      display: flex;
+      width:200px;
+      height:50px;
+      position: absolute;
+      z-index: 30;
+      left:65%;
+      top: 60%;
+      
+      color:white;
+      text-decoration: none;
+      font-size: 19px;
+      font-weight: 600;
+      border-radius: 30px;
+      justify-content: center;
+      align-items: center;
+    }
+    .temp1 i{
+      margin-left:10px;
+      font-size: 20px;
+    }
+    .temp1:hover{
+      color:#1d1b31;
+      background-color: white;
+      border:#1d1b31;
+    }
+    .nav{
+     width: 100vw;
+      display: flex;
+      position: fixed;
+      z-index: 20;
+      background-color: #11101d;
+    }
+
+    .nav_content{
+      background-color: #1d1b31;
+      
+      margin:20px 10px;
+      font-size: 20px;
+      color: blanchedalmond;
+      border-radius: 10px;
+      width:120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .company_name{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #1d1b31;
+      padding:10px;
+      margin:20px 10px;
+      font-size: 25px;
+      font-family: Orbitron,sans-serif;
+      color: blanchedalmond;
+      border-radius: 10px;
+    }
+    .com{
+      
+      color: blanchedalmond;
+    }
+    a{
+      text-decoration: none;
+    }
+   
+</style>
+  <body>
+    <img src="/project/ProjectImages/home.jpg">
+    <a class="temp1" href="/project/ProjectHTML/login.php"><div>Get Started</div><i class='bx bx-right-arrow-alt'></i></a>
+    <div class="nav">
+       <div class="company_name">Savioo Hotel & Restaurant</div>
+       <div class="nav_content"><a class="com" href="login.php">Home</a></div>
+      <div class="nav_content">About us</div>
+      <div class="nav_content">FAQs</div>
+      </div>
+  </body>
+</html>
